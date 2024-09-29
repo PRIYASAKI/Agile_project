@@ -1,13 +1,13 @@
 // components/Navbar.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';  // Import the CSS file
+import './Navbar.css'; // Import the CSS file
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <button><Link to="/">AuctionApp</Link></button> 
+        <Link to="/" className="navbar-button">AuctionApp</Link>
       </div>
       <ul className="navbar-links">
         <li>

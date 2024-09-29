@@ -16,13 +16,9 @@
   padding: 10px 15px; /* Add padding for button effect */
   border-radius: 4px; /* Rounded corners */
   transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  background-color: transparent; /* Ensure transparent background by default */
 }
 
-.navbar-brand:hover {
-  background-color: #8e9194; /* Blue background on hover */
-  color: white; /* Keep text color white on hover */
-  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.5);  /* Shadow for button effect */
-}
 
 .navbar-links {
   list-style: none; /* Remove bullet points */
@@ -43,7 +39,7 @@
 }
 
 .navbar-button:hover {
-  background-color: #8e9194; /* Blue background on hover */
+  background-color: #8e9194; /* Background color on hover */
   color: white; /* Keep text color white on hover */
   border: 1px solid white; /* White border on hover */
   box-shadow: 0 2px 8px rgba(0, 123, 255, 0.5); /* Shadow for button effect */
