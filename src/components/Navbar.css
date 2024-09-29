@@ -1,0 +1,50 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #343a40; /* Dark background for the navbar */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+  font-size: 24px;
+  color: white; /* Brand color */
+  text-decoration: none; /* Remove underline */
+  padding: 10px 15px; /* Add padding for button effect */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-brand:hover {
+  background-color: #8e9194; /* Blue background on hover */
+  color: white; /* Keep text color white on hover */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.5);  /* Shadow for button effect */
+}
+
+.navbar-links {
+  list-style: none; /* Remove bullet points */
+  display: flex; /* Align items horizontally */
+}
+
+.navbar-links li {
+  margin-left: 20px; /* Space between links */
+}
+
+.navbar-button {
+  padding: 10px 15px; /* Add padding for button effect */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  border-radius: 4px; /* Rounded corners */
+  background-color: transparent; /* Transparent background */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navbar-button:hover {
+  background-color: #8e9194; /* Blue background on hover */
+  color: white; /* Keep text color white on hover */
+  border: 1px solid white; /* White border on hover */
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.5); /* Shadow for button effect */
+}

@@ -1,0 +1,73 @@
+/* LoginPage.css */
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.login-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 400px; /* Adjusted width for the card */
+  text-align: center; /* Centered text */
+}
+
+.login-card h2 {
+  margin-bottom: 1.5rem; /* Space below the title */
+}
+
+.login-card form {
+  display: flex;
+  flex-direction: column; /* Stack inputs vertically */
+}
+
+.login-card input {
+  margin-bottom: 1rem; /* Space between inputs */
+  padding: 0.8rem; /* Padding inside inputs */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.login-card button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition */
+  margin-bottom: 0.5rem; /* Space between buttons */
+}
+
+.login-card button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.register-btn {
+  background-color: #28a745; /* Green button color */
+}
+
+.register-btn:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Forgot Password Link Style */
+.forgot-password-link {
+  margin-top: 1rem; /* Space above the link */
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Remove underline */
+  font-size: 0.9rem; /* Font size */
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.forgot-password-link:hover {
+  color: #0056b3; /* Darker color on hover */
+}
