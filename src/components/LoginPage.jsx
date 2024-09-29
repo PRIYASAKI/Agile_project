@@ -8,18 +8,37 @@ const LoginPage = () => {
   const [password, setPassword] = useState('');
   const navigate = useNavigate(); // Hook to programmatically navigate
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    
-    // Simulated login logic (replace this with your API call)
-    const hardcodedEmail = 'user@example.com'; // Replace with your actual logic
-    const hardcodedPassword = 'password123'; // Replace with your actual logic
 
-    if (email === hardcodedEmail && password === hardcodedPassword) {
-      alert('Login successful!');
-      navigate('/home'); // Redirect to the home page after successful login
-    } else {
-      alert('Invalid email or password. Please try again.');
+    // Validate email format
+    if (!email.includes('@') || !email.includes('.')) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    try {
+      // Make an API call to check the login credentials
+      const response = await fetch('http://localhost:5000/login', { // Update URL accordingly
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email, password }),
+      });
+
+      const data = await response.json();
+
+      // Check the response from the server
+      if (data.success) {
+        alert('Login successful!');
+        navigate('/home'); // Redirect to the home page after successful login
+      } else {
+        alert('Invalid email or password. Please try again.');
+      }
+    } catch (error) {
+      alert('An error occurred. Please try again later.');
+      console.error('Login error:', error);
     }
   };
 
