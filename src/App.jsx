@@ -10,6 +10,8 @@ import ForgotPasswordPage from './components/ForgotPasswordPage';
 import AuctionListPage from './pages/AuctionListPage';  // New Page
 import AuctionDetailPage from './pages/AuctionDetailPage';  // New Page
 import UserProfilePage from './pages/UserProfilePage';  // New Page
+import ProductPage from './pages/ProductsPage';
+import CategoriesPage from './pages/CategoriesPage';
 
 function App() {
   return (
@@ -18,11 +20,14 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/home" element={<HomePage />} />
-        <Route path="/auctions" element={<AuctionListPage />} />  {/* New route for auction list */}
-        <Route path="/auction/:auctionId" element={<AuctionDetailPage />} />  {/* New route for auction details */}
-        <Route path="/profile" element={<UserProfilePage />} />  {/* New route for user profile */}
-        <Route path="/register" element={<RegisterPage />} />  {/* Register route */}
-        <Route path="/forgot-password" element={<ForgotPasswordPage />} />  {/* Forgot Password route */}
+        <Route path="/auctions" element={<AuctionListPage />} />  
+        <Route path="/auction/:auctionId" element={<AuctionDetailPage />} /> 
+        <Route path="/categories" element={<CategoriesPage />} />  
+        <Route path="/products" element={<ProductPage />} />
+        <Route path="/profile" element={<UserProfilePage />} />  
+        <Route path="/register" element={<RegisterPage />} />  
+        <Route path="/forgot-password" element={<ForgotPasswordPage />} /> 
+        
       </Routes>
       <Footer />
     </Router>
